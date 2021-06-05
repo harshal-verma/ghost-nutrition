@@ -6,4 +6,68 @@ font-family: 'Poppins', sans-serif; */
     --btn-green: #1FA3A3;
     --btn-hover-green: #177878;
     --footer-btn: #6a5acd;
+    --foter-bg: #EDF2F7;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* common */
+.list--inline{
+    display: inline;
+}
+/* navbar */
+nav{
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--primary-color);
+   padding: 4px 12px;
+}
+
+.nav__logo{
+   width: 130px;
+   height: auto;
+}
+
+.nav__list{
+   align-self: center;
+}
+
+.nav__list li{
+
+}
+
+.nav__list a{
+
+}
+
+.nav__btn{
+    padding: 6px 12px;
+    font-size: 18px;
+    letter-spacing: .3px;
+}
+
+#signup{
+    background-color: transparent;
+    border: none;
+    color: var(--btn-green)
+}
+
+#signup:hover{
+    color: var(--btn-hover-green);
+    transition: ease-out 0.7s;
+}
+
+#login{
+    background-color: var(--btn-green);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#login:hover{
+    background-color: var(--btn-hover-green);;
+    transition: ease-out 0.7s;
 }
