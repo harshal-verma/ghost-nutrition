@@ -8,6 +8,8 @@ font-family: 'Poppins', sans-serif; */
     --footer-btn: #6a5acd;
     --footer-bg: #EDF2F7;
     --footer-text: #718096;
+    --disclaimer-text: #a0aec0;
+    --name: #FBD38D;
 }
 
 body{
@@ -231,20 +233,24 @@ input[type='submit']:hover{
 
 .footer-contact-me{
     background-color: var(--primary-color);
-    padding: 6px 12px;
+    padding: 18px 12px 24px 12px;
 }
 
 .contact__me--flex{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 18px;
 }
 
 .reachout{
-
+   color: var(--disclaimer-text);
 }
 
 .github__btn{
-
+   padding: 6px 12px;
+   font-family: inherit;
+   border-radius: 5px;
+   border: none;
 }
 
 .fa-github{
@@ -252,13 +258,41 @@ input[type='submit']:hover{
 }
 
 .linkedin__btn{
+    padding: 6px 12px;
+    font-family: inherit;
+    background-color: var(--footer-btn);
+    border-radius: 5px;
+    border: none;
+}
 
+.linkedin__btn:hover{
+    background-color: var(--btn-green);
 }
 
 .fa-linkedin-in{
 
 }
 
-/*by harshal verma wala*/
+.madeby__link{
+    align-self: center;
+    color: var(--disclaimer-text);
+}
+
+.name{
+    color: var(--btn-green);
+}
+
+.name:hover{
+    color: var(--name);
+}
+
+.disclaimer{
+    border-top: 1px var(--disclaimer-text) dashed;
+}
+
+.disclaimer p{
+    text-align: center;
+    color: var(--disclaimer-text);
+}
 
 
