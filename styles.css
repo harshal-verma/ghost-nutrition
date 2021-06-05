@@ -23,7 +23,7 @@ nav{
    display: flex;
    justify-content: space-between;
    background-color: var(--primary-color);
-   padding: 0px 12px;
+   padding: 4px 12px;
 }
 
 .nav__logo{
