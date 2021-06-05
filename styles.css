@@ -17,11 +17,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* common */
 .list--inline{
     display: inline;
 }
-/* navbar */
+
 nav{
    display: flex;
    justify-content: space-between;
@@ -38,13 +37,6 @@ nav{
    align-self: center;
 }
 
-.nav__list li{
-
-}
-
-.nav__list a{
-
-}
 
 .nav__btn{
     padding: 6px 12px;
@@ -75,7 +67,6 @@ nav{
     transition: ease-out 0.7s;
 }
 
-/*header*/
 .header__flex{
     display: flex;
     justify-content: space-between;
@@ -100,20 +91,12 @@ nav{
     width: 85%;
 }
 
-.header__flex figure{
-
-}
-
 .header__image{
     height: 350px;
     width: auto;
 }
 
 /* products */
-.products__grid{
-    display: grid;
-    height: 500px;
-}
 
 .products__heading{
     font-family: 'Carter One', cursive;
@@ -122,11 +105,10 @@ nav{
     padding: 0px 12px;
 }
 
-/*footer*/
 .footer-contact-company{
     display: flex;
     justify-content:space-between;
-    padding: 8px 16px;
+    padding: 16px 16px 32px 16px;
     background-color: var(--footer-bg);
 }
 
@@ -137,18 +119,45 @@ nav{
 
 .footer__heading{
     color: var(--primary-color);
-    font-size: 24px;
+    font-size: 32px;
     font-family: 'Carter One', cursive;
 }
 
 .company__address{
     color: var(--footer-text);
+    font-size: 18px;
+    width: 80%;
 }
 
 .company__phone{
     color: var(--footer-text);
     text-decoration: none;
-    
+    font-size: 18px;
+}
+
+.company__email{
+    font-size: 18px;
+}
+
+.submit{
+    padding: 12px 0px;
+    display: block;
+    width: 100%;
+    background-color: var(--btn-green);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.submit:hover{
+    background-color: var(--btn-hover-green);
+    transition: 0.3s ease-out;
+}
+
+.fa-paper-plane{
+    margin-right: 8px;
 }
 
 a{
@@ -162,28 +171,13 @@ a{
 
 .follow-us{
     color: var(--footer-text);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .footer__list{
     padding: 0px;
-    font-size: 24px;
+    font-size: 32px;
     align-self:flex-start;
-}
-
-.footer-list li{
-}
-
-.fa-facebook-f{
-  
-}
-
-.fa-instagram{
-
-}
-
-.fa-twitter{
-
 }
 
 .form{
@@ -191,15 +185,15 @@ a{
     padding: 0px 12px;
 }
 
-/*form*/
-
 input[type='email'],input[type='text']{
     display: block;
-    width: 100%;
+    width: 99%;
     padding: 6px;
     border-radius: 4px;
     border:none;
     border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .form label{
@@ -213,6 +207,7 @@ textarea{
     border-radius: 5px;
     padding: 6px;
     font-size: 18px;
+    margin-bottom: 5px;
 }
 
 input[type='submit']{
@@ -253,10 +248,6 @@ input[type='submit']:hover{
    border: none;
 }
 
-.fa-github{
-
-}
-
 .linkedin__btn{
     padding: 6px 12px;
     font-family: inherit;
@@ -267,10 +258,6 @@ input[type='submit']:hover{
 
 .linkedin__btn:hover{
     background-color: var(--btn-green);
-}
-
-.fa-linkedin-in{
-
 }
 
 .madeby__link{
