@@ -11,7 +11,70 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
-    
+    <nav>
+        <div class="nav__flex">
+            <img src="/images/ghost_logo.png" alt="ghost logo" class="nav__logo">
+            <ul class="nav__list list--inline">
+                <!-- <li></li> -->
+                <a href="/"><li><button>Sign Up</button class="nav__btn" id="signup"></li></a>
+                <a href="/"><li><button class="nav__btn" id="login">Login</button></li></a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div class="header__flex">
+                <div class="header__intro">
+                    <h2 class='header__heading'>GHOST is the world's first lifestyle sports nutrition brand.</h2>
+                    <p class="header__description">The name GHOST® and mantra "be seen" come from that feeling of being behind the scenes and wanting to be heard, wanting to make an impact; we're all ghosts. This is our time.</p>
+                </div>
+                <figure>
+                    <img src="/images/banner_img.png" alt="banner image">
+                </figure>
+            </div>
+        </header>
+        <section>
+            <div class="products__grid">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contact-company">
+            <div class="contact">
+                <h3 class="footer__heading">Drop a message</h3>
+                <p class="company__address">
+                    Office no. 2, Janice Complex, Janice Street, Yemen road, Yemen - 121121
+                </p>
+                <a href="/"><p class="company__phone">
+                    (+285)6548329764</p></a>
+                <a href="/"><p class="company__email">support@ghostfitnessproducts.com
+                    </p></a>
+                <p>Follow us</p>
+                <ul class="footer__list list--inline">
+                    <a href=""><li><button></button></li></a>
+                    <a href=""><li><button></button></li></a>
+                    <a href=""><li><button></button></li></a>
+                </ul>
+
+
+            </div>
+            <div class="form">
+                <h3 class="footer__heading">Drop a message</h3>
+            <form action="/">
+            <label for="email">Email* <input type="email" placeholder="john@gmail.com" name="email" id="email"></label>
+            <label for="subject">Subject*
+                <input type="text" name="subject" id="subject" placeholder="Purpose of your message">
+            </label>
+            <label for="message">Message*
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </label>
+            <input type="submit" value="SEND">
+            </form>
+            </div>
+        </div>
+        <div class="footer-contact-me"></div>
+    </footer>
     <script module="type" src="/app.js"></script>
 </body>
 </html>
