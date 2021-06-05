@@ -6,7 +6,8 @@ font-family: 'Poppins', sans-serif; */
     --btn-green: #1FA3A3;
     --btn-hover-green: #177878;
     --footer-btn: #6a5acd;
-    --foter-bg: #EDF2F7;
+    --footer-bg: #EDF2F7;
+    --footer-text: #718096;
 }
 
 body{
@@ -121,43 +122,58 @@ nav{
 
 /*footer*/
 .footer-contact-company{
-
+    display: flex;
+    justify-content:space-between;
+    padding: 8px 16px;
+    background-color: var(--footer-bg);
 }
 
 .contact{
-
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__heading{
-
+    color: var(--primary-color);
+    font-size: 24px;
+    font-family: 'Carter One', cursive;
 }
 
 .company__address{
-
+    color: var(--footer-text);
 }
 
 .company__phone{
+    color: var(--footer-text);
+    text-decoration: none;
+    
+}
 
+a{
+    text-decoration: none;
 }
 
 .company__email{
-
+    color: var(--footer-text);
+    
 }
 
 .follow-us{
-
+    color: var(--footer-text);
+    font-size: 12px;
 }
 
 .footer__list{
-
+    padding: 0px;
+    font-size: 24px;
+    align-self:flex-start;
 }
 
-.footer__btn{
-
+.footer-list li{
 }
 
 .fa-facebook-f{
-
+  
 }
 
 .fa-instagram{
@@ -169,17 +185,80 @@ nav{
 }
 
 .form{
-
+    width: 40%;
+    padding: 0px 12px;
 }
 
 /*form*/
 
-.footer-contact-me{
+input[type='email'],input[type='text']{
+    display: block;
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border:none;
+    border-radius: 5px;
+}
 
+.form label{
+    font-size: 12px;
+}
+
+textarea{
+    width: 100%;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 18px;
+}
+
+input[type='submit']{
+    width: 100%;
+    padding: 6px 12px;
+    background-color: var(--btn-green);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+input[type='submit']:hover{
+    background-color: var(--btn-hover-green);
+    transition: ease-out 0.7s;
+}
+
+.footer-contact-me{
+    background-color: var(--primary-color);
+    padding: 6px 12px;
 }
 
 .contact__me--flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reachout{
 
 }
+
+.github__btn{
+
+}
+
+.fa-github{
+
+}
+
+.linkedin__btn{
+
+}
+
+.fa-linkedin-in{
+
+}
+
+/*by harshal verma wala*/
 
 
