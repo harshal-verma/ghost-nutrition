@@ -40,7 +40,7 @@ nav{
 
 .nav__btn{
     padding: 6px 12px;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: .3px;
 }
 
@@ -98,6 +98,11 @@ nav{
 
 /* products */
 
+.products__flex{
+    display: flex;
+    padding: 6px 12px;
+}
+
 .products__heading{
     font-family: 'Carter One', cursive;
     font-size: 36px;
@@ -105,11 +110,97 @@ nav{
     padding: 0px 12px;
 }
 
+.products__card{
+    border: 1px black solid;
+    width: 32%;
+    padding: 3px 12px;
+    border-radius: 8px;
+    border: solid 1px var(--footer-text);
+}
+
+.products__image{
+    width: 100%;
+    height: auto;
+}
+
+.products__pq{
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__pq div p{
+    color: var(--footer-text);
+    font-size: 12px;
+}
+
+.products__pq div h2{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-family: 'Carter One', cursive;
+}
+
+.fa-less-than{
+    font-size: 24px;
+    color: rgb(185, 181, 181);
+}
+
+.fa-less-than:hover{
+    color: var(--name);
+}
+
+.fa-greater-than{
+    font-size: 24px;
+    color: rgb(185, 181, 181);
+}
+
+.fa-greater-than:hover{
+    color: var(--name);
+
+}
+
+
+.product__heading{
+    font-family: 'Carter One', cursive;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.product__description{
+    color: var(--footer-text);
+}
+
+.description__bold{
+    color: var(--primary-color);
+}
+
 .footer-contact-company{
     display: flex;
     justify-content:space-between;
     padding: 16px 16px 32px 16px;
     background-color: var(--footer-bg);
+}
+
+.add__to__cart{
+    width: 78%;
+    font-size: 18px;
+    background-color: var(--btn-green);
+    border:none;
+    border-radius: 5px;
+    color: white;
+    padding: 6px 12px;
+}
+
+.add__to__cart:hover{
+    background-color: var(--btn-hover-green);
+}
+
+.view__product{
+    width: 20%;
+    font-size: 18px;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    padding: 6px 12px;
 }
 
 .contact{
