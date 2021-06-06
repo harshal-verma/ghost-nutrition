@@ -3,8 +3,8 @@ const productsArray = [
         id: 1,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/GlitchReverseDucks.png?v=1603996974',
         name: 'Glitch Shaker',
-        description: 'BlenderBottle® Quality meets EPIC GHOST Hockey-Inspired Colorways.',
-        details: "Official BlenderBottle® Brand Shaker					\n BlenderBottle® Wire Whisk Included					EPIC Hockey-Inspired Colorways					GHOST® Glitch Logo",
+        description: 'BlenderBottle® Quality meets EPIC GHOST Hockey-Inspired Colorways. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In',
+        details: "Official BlenderBottle® Brand Shaker					\n BlenderBottle® Wire Whisk Included					EPIC Hockey-Inspired Colorways					GHOST® Glitch Logo ",
         price: 7,
         type: 'Merchandise',
         wishlisted: false
@@ -23,7 +23,7 @@ const productsArray = [
         id: 3,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/Size_Warheads_SGA.png?v=1598245515',
         name: 'Ghost Size',
-        description: "New school meets old school, clinically dosed, packed to the nines, transparent AF, muscle builder conceived to make gains faster than photoshop.",
+        description: "New school meets old school, clinically dosed, packed to the nines, transparent AF, muscle builder conceived to make gains faster than photoshop.Lorem ipsum dolor sit amet, consectetur adipiscing.",
         details: "New school (Creatine HCl) meets old school (Creatine Monohydrate) Creatine combination added to maximize efficacy, absorption and solubility. GHOST® Size contains the first ever \"Full Yield Creatine\" delivering 5G of actual yielded Creatine per scoop. You're right, most brands add 5G of Creatine, but because Creatine isn't 100% pure you're left with much less than 5G of actual delivered Creatine. At GHOST® we cherish every gram (and the gains that come along with them), so we've beefed up our Creatine (3.21G HCl & 2.84G Monohydrate) to ensure you're getting the FULL, DELIVERED 5G dose in every scoop.",
         price: 23,
         type: 'Muscle Builder',
@@ -43,7 +43,8 @@ const productsArray = [
         id: 5,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/Pump_Warheads_WM.png?v=1587659144',
         name: 'Ghost Pump',
-        description: "Full disclosure—the GHOST® fam is obsessed with nitric oxide products and we're not playing around when we say GHOST® Pump is the greatest...ever. After more than a year in the making, GHOST® Pump is here delivering more of everything—better ingredients (including the patented NO3-T®, GlycerSize™ and Astragin®), better formula (fully disclosed AND vegan friendly), better flavors (including authentic collabs) and better value (more scoops).",
+        description: "Full disclosure—the GHOST® fam is obsessed with nitric oxide products and we're not playing around when we say GHOST® Pump is the greatest...ever. After more than a year in the making, GHOST® Pump is here delivering more of everything—better ingredients (including the patented NO3-T®, GlycerSize™ and Astragin®), better",
+        // formula (fully disclosed AND vegan friendly), better flavors (including authentic collabs) and better value (more scoops).",
         details: "Astragin® works to help improve your body's ability to absorb key amino acids, proteins and glucose...in other words, Astragin® ensures you're getting maximum benefit from every scoop of GHOST® Pump.",
         price: 18,
         type: 'Muscle Builder',
@@ -62,7 +63,7 @@ const productsArray = [
     {
         id: 7,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/InfraredCutOff_Flatlay.png?v=1600724872',
-        name: 'Ghost Summer Tones Sleeveless Tee',
+        name: 'Ghost Sleeveless Tee',
         description: "The September Capsule “SUMMER TONES V2” and the Summer Tones V2 Sleeveless Tee released Thursday, September 24, exclusively online and at 12PM CT.",
         details: "GHOST® Striped Logo					Sneaker inspired colorways					Unisex					Once it's gone, it's gone..",
         price: 10,
@@ -73,8 +74,8 @@ const productsArray = [
         id: 8,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/Gray_Snapback.png?v=1583169259',
         name: 'Ghost Logo Snapback Cap',
-        description: "The must-have GHOST® accessory.",
-        details: "Classic fitting snapback with flat brim					Raised front embroidery					Custom GHOST® branded interior lining",
+        description: "The must-have GHOST® accessory.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus.",
+        details: "Classic fitting snapback with flat brim					Raised front embroidery					Custom GHOST® branded interior lining ",
         price: 8,
         type: 'Merchandise',
         wishlisted: false
@@ -83,7 +84,7 @@ const productsArray = [
         id: 9,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/VoltTee_Back.png?v=1598540928',
         name: 'Ghost Glitch Tee',
-        description: "The May Capsule “GLITCH” and the GLITCH Tee released Thursday, May 28, exclusively online and at 12PM CT.",
+        description: "The May Capsule “GLITCH” and the GLITCH Tee released Thursday, May 28, exclusively online and at 12PM CT.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus.Lorem ipsum dolor sit amet",
         details: "Classic Tee					GHOST® Gamer inspired GHOST® Logo					Unisex					Once it's gone, it's gone... ",
         price: 15,
         type: 'Merchandise',
@@ -93,7 +94,7 @@ const productsArray = [
         id: 10,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/Sportiqe_FlatShots_HeaCrop.png?v=1588261452',
         name: 'Ghost Cropped Hoodie',
-        description: "The GHOST® Women's Cropped Hoodie is a brand new, limited edition piece designed by the women of GHOST®, for the women of GHOST®.",
+        description: "The GHOST® Women's Cropped Hoodie is a brand new, limited edition piece designed by the women of GHOST®, for the women of GHOST®. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus.",
         details: "Premium SPORTIQE® Brand French Terry					Tapered fit with a Flattering Raw Edge					High Quality Double Layered Oversized GHOST® Logo Print ",
         price: 18,
         type: 'Merchandise',
@@ -103,7 +104,7 @@ const productsArray = [
         id: 11,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/Sportiqe_FlatShots_NvyZip.png?v=1574898875',
         name: 'Ghost Zip-up hoodie',
-        description: "Legends, last year you loved the new custom scuba hood design. So we brought it back. Say welcome back to the most versatile fleece in your arsenal.",
+        description: "Legends, last year you loved the new custom scuba hood design. So we brought it back. Say welcome back to the most versatile fleece in your arsenal. Lorem ipsum dolor sit amet, consectetur adipiscing.",
         details: "Premium SPORTIQE® Brand French Terry					Upgraded snag-free zipper 					Tapered fit spec'd to accentuate your physique 					Embroidered left chest GHOST® Logo",
         price: 35,
         type: 'Merchandise',
@@ -113,7 +114,7 @@ const productsArray = [
         id: 12,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/Sportiqe_FlatShots_InfCrew.png?v=1574899487',
         name: 'Ghost Classic Crewneck',
-        description: "Legends get the best of both worlds with the GHOST® Classic Crewneck.",
+        description: "Legends get the best of both worlds with the GHOST® Classic Crewneck.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing.",
         details: "Premium SPORTIQE® Brand French Terry					Tapered fit spec'd to accentuate your physique					High Quality Double Layered Oversized GHOST® Print",
         price: 25,
         type: 'Merchandise',
@@ -138,11 +139,10 @@ function showProducts(array){
            </div>
            <div class="products__quatities">
                <p>Quantity</p>
-               <i class="fas fa-less-than"></i> <span>1</span> <i class="fas fa-greater-than"></i>
+               <i class="fas fa-less-than"></i> <span class="quantity">1</span> <i class="fas fa-greater-than"></i>
            </div>
        </div>
        <button class="add__to__cart">Add to cart</button><button class="view__product">View 
-            <i class="fas fa-greater-than"></i>
        </button>
    </div>
        `;
