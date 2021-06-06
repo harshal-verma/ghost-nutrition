@@ -1,4 +1,4 @@
-productsArray: [
+const productsArray = [
     {
         id: 1,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/GlitchReverseDucks.png?v=1603996974',
@@ -121,3 +121,13 @@ productsArray: [
     }
     
 ]
+
+function showProducts(array){
+    array.forEach((product) => {
+        const productEl = document.createElement(div);
+        productEl.innerHTML = `
+                
+        `
+    })
+}
+
