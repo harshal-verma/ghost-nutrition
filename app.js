@@ -128,7 +128,6 @@ const productEl = document.querySelector(".products__flex");
 const loginEl = document.getElementById("login");
 const addToCardLoginEl = document.querySelector(".add__to__cart");
 const cancel = document.getElementById("cancel");
-const viewProduct = document.querySelector(".view__product");
 
 function showProducts(array){
     array.forEach((product) => {
@@ -149,7 +148,7 @@ function showProducts(array){
                <i class="fas fa-less-than"></i> <span class="quantity">1</span> <i class="fas fa-greater-than"></i>
            </div>
        </div>
-       <button class="add__to__cart">Add to cart</button><button class="view__product">View 
+       <button class="add__to__cart">Add to cart</button><button class="view__product" id="view">View 
        </button>
    </div>
        `;
@@ -183,7 +182,3 @@ showProducts(productsArray);
 //     loginEl.removeEventListener();
 // }
 // cancel.addEventListener("click" , cancelClickHandler);
-
-function viewAllProduct(){
-    
-}
