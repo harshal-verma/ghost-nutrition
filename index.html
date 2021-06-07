@@ -94,7 +94,8 @@
             <label for="message">Message*
                 <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your message here" required></textarea>
             </label>
-            <button class='submit'><i class="fas fa-paper-plane"></i>SEND</button>
+            <input type="submit" value="SEND">
+            <!-- <button class='submit'>SEND</button> -->
             </form>
             </div>
         </div>
@@ -120,6 +121,21 @@
             </div>
         </div>
     </footer>
+    <!-- login -->
+    <div class="login">
+        <div class="cross" id="cancel"><i class="fas fa-times"></i></div>
+        <figure><img src="/images/ghost _logo_grey.png" alt="ghost logo grey" class="banner__grey"></figure>
+        <form action="/">
+        <label for="email">
+            Email <input type="email" name="email" id="email" class="login__email" required>
+        </label>
+        <label for="password">
+            Password <input type="password" name="password" id="password" class="login__password" required>
+        </label>
+        <input type="submit" value="Login" id="login" class="login__submit">
+        </form>
+    <!-- login -->
+    </div>
     <script module="type" src="/app.js"></script>
 </body>
 </html>

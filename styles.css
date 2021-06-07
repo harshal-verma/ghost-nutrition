@@ -277,7 +277,7 @@ nav{
     text-decoration: underline;
 }
 
-.submit{
+/* .submit{
     padding: 12px 0px;
     display: block;
     width: 100%;
@@ -294,7 +294,7 @@ nav{
 .submit:hover{
     background-color: var(--btn-hover-green);
     transition: 0.3s ease-out;
-}
+} */
 
 .fa-paper-plane{
     margin-right: 8px;
@@ -381,21 +381,23 @@ textarea{
     margin-bottom: 5px;
 }
 
-/* input[type='submit']{
+input[type='submit']{
+    padding: 12px 0px;
+    display: block;
     width: 100%;
-    padding: 6px 12px;
     background-color: var(--btn-green);
-    border: 1px solid var(--footer-btn);
-    color: var(--white);
-    cursor: pointer;
+    border: none;
     border-radius: 5px;
-
+    font-size: 18px;
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 input[type='submit']:hover{
     background-color: var(--btn-hover-green);
     transition: ease-out 0.7s;
-} */
+}
 
 .footer-contact-me{
     background-color: var(--primary-color);
@@ -455,4 +457,54 @@ input[type='submit']:hover{
     color: var(--disclaimer-text);
 }
 
+/* login */
+.login{
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--grey);
+    padding: 6px 12px;
+    border-radius: 5px;
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    background-color: var(--white);
+}
 
+.fa-times{
+   color: var(--grey);
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+#cancel{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner__grey{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 16px auto;
+}
+
+.login__email{
+    margin-bottom: 12px;
+    border:1px solid #000;
+    background-color: var(--footer-bg);
+}
+
+.login__password{
+    width: 97%;
+    margin-bottom: 12px;
+    background-color: var(--footer-bg);
+    border: none;
+    padding: 9px 12px;
+    border-radius: 4px;
+}
+
+.login__submit{
+    width: 100%;
+    margin-bottom: 12px;
+}
