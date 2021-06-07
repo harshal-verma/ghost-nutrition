@@ -43,6 +43,7 @@ nav{
     padding: 6px 12px;
     font-size: 16px;
     letter-spacing: .3px;
+    cursor: pointer;
 }
 
 #signup{
@@ -207,6 +208,7 @@ nav{
     color: white;
     padding: 10px 12px;
     margin-right: 6px;
+    cursor: pointer;
 }
 
 .add__to__cart:hover{
@@ -223,6 +225,7 @@ nav{
     color: var(--grey);
     background-color: white;
     border: 1px solid var(--primary-color);
+    cursor: pointer;
 }
 
 .view__product:hover{
@@ -248,14 +251,30 @@ nav{
     width: 80%;
 }
 
+.company__address:hover{
+    color: var(--footer-btn);
+    text-decoration: underline;
+}
+
+
 .company__phone{
     color: var(--footer-text);
     text-decoration: none;
     font-size: 20px;
 }
 
+.company__phone:hover{
+    color: var(--footer-btn);
+    text-decoration: underline;
+}
+
 .company__email{
     font-size: 20px;
+}
+
+.company__email:hover{
+    color: var(--footer-btn);
+    text-decoration: underline;
 }
 
 .submit{
@@ -269,6 +288,7 @@ nav{
     color: var(--white);
     font-weight: bold;
     transition: ease-out 0.7s;
+    cursor: pointer;
 }
 
 .submit:hover{
@@ -361,7 +381,7 @@ textarea{
     margin-bottom: 5px;
 }
 
-input[type='submit']{
+/* input[type='submit']{
     width: 100%;
     padding: 6px 12px;
     background-color: var(--btn-green);
@@ -375,7 +395,7 @@ input[type='submit']{
 input[type='submit']:hover{
     background-color: var(--btn-hover-green);
     transition: ease-out 0.7s;
-}
+} */
 
 .footer-contact-me{
     background-color: var(--primary-color);
@@ -397,6 +417,7 @@ input[type='submit']:hover{
    font-family: inherit;
    border-radius: 5px;
    border: none;
+   cursor: pointer;
 }
 
 .linkedin__btn{
@@ -405,6 +426,7 @@ input[type='submit']:hover{
     background-color: var(--footer-btn);
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 .linkedin__btn:hover{
