@@ -122,19 +122,34 @@
         </div>
     </footer>
     <!-- login -->
-    <!-- <div class="login">
+    <div class="login" id="user__div">
         <div class="cross" id="cancel"><i class="fas fa-times"></i></div>
         <figure><img src="/images/ghost _logo_grey.png" alt="ghost logo grey" class="banner__grey"></figure>
         <form action="/">
         <label for="email">
-            Email <input type="email" name="email" id="email" class="login__email" required>
+            Email <input type="email" name="email" id="email__field" class="login__email" required>
         </label>
         <label for="password">
-            Password <input type="password" name="password" id="password" class="login__password" required>
+            Password <input type="password" name="password" id="password__field" class="login__password" required>
         </label>
-        <input type="submit" value="Login" id="login" class="login__submit">
+        <input type="submit" value="Login" id="login__page" class="login__submit" onclick="login()">
         </form>
-    </div> -->
+    </div>
+    <!--after login-->
+    <div id="login__div">
+        <p id="user__para"></p>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <!--fire base-->
+<script src="/__/firebase/8.6.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.5/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
     <script module="type" src="/app.js"></script>
 </body>
 </html>

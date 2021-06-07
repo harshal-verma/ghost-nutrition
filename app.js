@@ -182,3 +182,44 @@ showProducts(productsArray);
 //     loginEl.removeEventListener();
 // }
 // cancel.addEventListener("click" , cancelClickHandler);
+
+// firebase.auth().onAuthStateChanged(function(user) {
+//     if (user) {
+//       // User is signed in.
+//       document.getElementById("user__div").style.display = 'block';
+//       document.getElementById("login__div").style.display = 
+//       'none';
+
+//       let user = firebase.auth().currentUser;
+//       if( user != null){
+//           let email_id = user.email;
+//           document.getElementById("user__para").innerHTML = "Welcome User: " + email_id;
+//       }
+//     } else {
+//       // No user is signed in.
+//       document.getElementById("user__div").style.display = 'none';
+//       document.getElementById("login__div").style.display = 
+//       'block';
+//     }
+//   });
+
+function login(){
+    let userEmail = document.getElementById("email__field").value;
+    let userPassword = document.getElementById("password__field").value;
+     firebase.auth().signInWithEmailAndPassword(userEmail, userPassword)
+     .then((userCredential) => {
+    // Signed in
+    var user = userCredential.user;
+    alert(user);
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // alert(errorMessage);
+  });
+   window.alert("Error: " + errorMessage)
+}
+
+// email__field
+// password__field
