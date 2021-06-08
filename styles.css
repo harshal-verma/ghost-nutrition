@@ -26,7 +26,7 @@ body{
     padding: 6px 12px;
     border-radius: 5px;
     background-color: var(--white);
-    width: 60%;
+    width: 500px;
 }
 
 .fa-shopping-cart{
@@ -58,14 +58,14 @@ body{
     border:1px solid #000;
     background-color: var(--footer-bg);
     display: block;
-    width: 98%;
+    width: 97%;
     border: none;
     padding: 10px 8px;
     border-radius: 4px;
 }
 
 .login__password{
-    width: 97%;
+    width: 95%;
     margin-bottom: 12px;
     background-color: var(--footer-bg);
     border: none;
