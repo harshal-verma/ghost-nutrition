@@ -125,10 +125,9 @@ const productsArray = [
 //variables
 const body = document.querySelector("body");
 const productEl = document.querySelector(".products__flex");
-// const loginEl = document.getElementById("login");
 const addToCardLoginEl = document.querySelector(".add__to__cart");
 const cancel = document.getElementById("cancel");
-
+//show products
 function showProducts(array){
     array.forEach((product) => {
 
@@ -145,7 +144,7 @@ function showProducts(array){
            </div>
            <div class="products__quatities">
                <p>Quantity</p>
-               <i class="fas fa-less-than"></i> <span class="quantity">1</span> <i class="fas fa-greater-than"></i>
+               <i class="fas fa-less-than" onclick = itemMinus()></i> <span class="quantity" id="number__of__items">1</span> <i class="fas fa-greater-than"></i>
            </div>
        </div>
        <button class="add__to__cart">Add to cart</button><button class="view__product" id="view">View 
@@ -157,28 +156,3 @@ function showProducts(array){
 }
 
 showProducts(productsArray);
-
-// function loginClickHandler(){
-//     const loginCard = document.createElement('div');
-//     loginCard.innerHTML = `
-//     <div class="login">
-//     <div class="cross" id="cancel"><i class="fas fa-times"></i></div>
-//     <figure><img src="/images/ghost _logo_grey.png" alt="ghost logo grey" class="banner__grey"></figure>
-//     <form action="/">
-//     <label for="email">
-//         Email <input type="email" name="email" id="email" class="login__email" required>
-//     </label>
-//     <label for="password">
-//         Password <input type="password" name="password" id="password" class="login__password" required>
-//     </label>
-//     <input type="submit" value="Login" id="login" class="login__submit">
-//     </form>
-// </div>
-//     `;
-//     body.append(loginCard);
-// }
-// loginEl.addEventListener("click" , loginClickHandler);
-// function cancelClickHandler(){
-//     loginEl.removeEventListener();
-// }
-// cancel.addEventListener("click" , cancelClickHandler);
