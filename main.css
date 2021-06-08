@@ -22,6 +22,26 @@ body{
     display: inline;
 }
 
+/*cart*/
+
+.fa-shopping-cart{
+    color: var(--white);
+}
+
+.cart__items{
+    color: var(--btn-green);
+    position: absolute;
+    top:9px;
+    right: 103px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart__text{
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
 nav{
    display: flex;
    justify-content: space-between;
@@ -38,6 +58,10 @@ nav{
    align-self: center;
 }
 
+.nav__list li{
+    margin: 0 10px;
+    color: white;
+}
 
 .nav__btn{
     padding: 6px 12px;
@@ -66,7 +90,6 @@ nav{
 
 #login:hover{
     background-color: var(--btn-hover-green);;
-    transition: ease-out 0.7s;
 }
 
 .header__flex{
@@ -96,20 +119,7 @@ nav{
 .header__image{
     height: 350px;
     width: auto;
-    /* animation-name: bounce;
-    animation-duration: 20s;
-    position: relative; */
 }
-
-/* @keyframes bounce{
-    0%{
-        bottom: 100px;
-    }
-    
-    100%{
-        top: 100px;
-    }
-} */
 
 /* products */
 
