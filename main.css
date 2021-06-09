@@ -24,6 +24,14 @@ body{
 
 /*cart*/
 
+.cart__link{
+    color: var(--white);
+}
+
+.cart__link:hover{
+    color: var(--btn-green);
+}
+
 .fa-shopping-cart{
     color: var(--white);
 }
