@@ -1,4 +1,4 @@
-import { productsArray } from './store.js';
+import { productsArray } from '../js/store.js';
 //variables
 const productEl = document.querySelector(".products__flex");
 
