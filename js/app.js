@@ -19,10 +19,10 @@ function showProducts(array){
            </div>
            <div class="products__quatities">
                <p>Quantity</p>
-               <i class="fas fa-less-than" onclick = itemMinus()></i> <span class="quantity" id="number__of__items">1</span> <i class="fas fa-greater-than"></i>
+               <i class="fas fa-less-than"></i> <span class="quantity" id="number__of__items">1</span> <i class="fas fa-greater-than"></i>
            </div>
        </div>
-       <button class="add__to__cart">Add to cart</button><button class="view__product" id="view">View 
+       <button class="add__to__cart" onclick = "addToCartBtn()">Add to cart</button><button class="view__product" id="view">View 
        </button>
    </div>
        `;
@@ -31,3 +31,4 @@ function showProducts(array){
 }
 
 showProducts(productsArray);
+

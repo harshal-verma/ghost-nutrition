@@ -16,20 +16,15 @@ font-family: 'Poppins', sans-serif; */
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .list--inline{
     display: inline;
 }
 
-/*cart*/
-
 .cart__link{
     color: var(--white);
-}
-
-.cart__link:hover{
-    color: var(--btn-green);
 }
 
 .fa-shopping-cart{
@@ -37,12 +32,17 @@ body{
 }
 
 .cart__items{
-    color: var(--btn-green);
+    background-color: var(--btn-green);
     position: absolute;
-    top:9px;
-    right: 103px;
-    font-size: 20px;
-    font-weight: bold;
+    top:12px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    right: 210px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: 'Poppins', sans-serif;
+    padding: 2px;
 }
 
 .cart__text{
@@ -67,7 +67,7 @@ nav{
 }
 
 .nav__list li{
-    margin: 0 10px;
+    margin: 0 12px;
     color: white;
 }
 
@@ -76,28 +76,14 @@ nav{
     font-size: 16px;
     letter-spacing: .3px;
     cursor: pointer;
-}
-
-#signup{
-    background-color: transparent;
-    border: none;
-    color: var(--btn-green)
-}
-
-#signup:hover{
-    color: var(--btn-hover-green);
-    transition: ease-out 0.7s;
-}
-
-#login{
     background-color: var(--btn-green);
     color: #fff;
     border: none;
     border-radius: 5px;
 }
 
-#login:hover{
-    background-color: var(--btn-hover-green);;
+.nav__btn:hover{
+    background-color: var(--btn-hover-green);
 }
 
 .header__flex{
@@ -308,25 +294,6 @@ nav{
     text-decoration: underline;
 }
 
-/* .submit{
-    padding: 12px 0px;
-    display: block;
-    width: 100%;
-    background-color: var(--btn-green);
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    color: var(--white);
-    font-weight: bold;
-    transition: ease-out 0.7s;
-    cursor: pointer;
-}
-
-.submit:hover{
-    background-color: var(--btn-hover-green);
-    transition: 0.3s ease-out;
-} */
-
 .fa-paper-plane{
     margin-right: 8px;
 }
@@ -488,4 +455,42 @@ input[type='submit']:hover{
     color: var(--disclaimer-text);
 }
 
+/* responsive css */
+@media screen and (max-width: 908px){
+    .products__flex{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
+@media screen and (max-width: 575px){
+    .nav__logo{
+        display: none;
+    }
+    .nav__list{
+        margin: 16px auto;
+    }
+    .cart__items{
+        left: 176px;
+    }
+    .header__flex{
+        display: block;
+    }
+    .header__intro{
+        width: 100%;
+        text-align: center;
+    }
+    .header__description{
+        width: 100%;
+        text-align: center;
+    }
+    .products__flex{
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-contact-company{
+        display: block;
+    }
+    .form{
+        width: 100%;
+    }
+}
