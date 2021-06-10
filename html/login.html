@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>login | store</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
@@ -28,13 +28,5 @@
         <input type="submit" value="Login" id="login__page" class="login__submit">
         </form>
     </div>
-    <script type="module" src="js/index.js"></script>
-    <script type="module" src="js/index.js">
-       firebase.auth().onAuthStateChanged(function(user){
-           if(user){
-               window.location.href = "home.html";
-           }
-       })
-    </script>
 </body>
 </html>
