@@ -85,3 +85,7 @@ body{
     color: var(--white);
 }
 
+#start-here-para{
+    text-decoration: none;
+    color: var(--btn-green);
+}
