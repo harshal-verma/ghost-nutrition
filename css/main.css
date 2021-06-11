@@ -460,6 +460,21 @@ input[type='submit']:hover{
     .products__flex{
         grid-template-columns: repeat(2,1fr);
     }
+    .header__image{
+        display: block;
+        margin: 0 auto;
+    }
+    .header__flex{
+        display: block;
+    }
+    .header__intro{
+        width: 100%;
+        text-align: center;
+    }
+    .header__description{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 575px){

@@ -1,11 +1,11 @@
 import { productsArray } from '../js/store.js';
 //variables
 const productEl = document.querySelector(".products__flex");
-
+const addToCartBtn = document.querySelector(".add__to__cart");
+const cartItemsValue = document.querySelector(".cart__items");
 //show products
 function showProducts(array){
     array.forEach((product) => {
-
        const productCardEl = document.createElement('div');
        productCardEl.innerHTML = `
        <div class="products__card">
@@ -22,7 +22,7 @@ function showProducts(array){
                <i class="fas fa-less-than"></i> <span class="quantity" id="number__of__items">1</span> <i class="fas fa-greater-than"></i>
            </div>
        </div>
-       <button class="add__to__cart" onclick = "addToCartBtn()">Add to cart</button><button class="view__product" id="view">View 
+       <button class="add__to__cart">Add to cart</button><button class="view__product" id="view">View 
        </button>
    </div>
        `;
@@ -32,3 +32,7 @@ function showProducts(array){
 
 showProducts(productsArray);
 
+addToCartBtn.addEventListener("click" , () => {
+    cartItemsValue.innerText++;
+    console.log(cartItemsValue.innerText);
+})
