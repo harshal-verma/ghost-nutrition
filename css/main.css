@@ -509,3 +509,65 @@ input[type='submit']:hover{
         width: 100%;
     }
 }
+
+.modal{
+display: none;
+background-color: var(--white);
+border: 1px solid var(--grey);
+padding: 6px 12px;
+border-radius: 5px;
+background-color: var(--white);
+width: 500px;
+margin: 8% 30%;
+box-shadow: -5px -5px 1px var(--white);
+}
+
+.banner__grey{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 16px auto;
+}
+
+.modal:target{
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.login__email{
+    margin-bottom: 12px;
+    border:1px solid #000;
+    background-color: var(--footer-bg);
+    display: block;
+    width: 97%;
+    border: none;
+    padding: 10px 8px;
+    border-radius: 4px;
+}
+
+.login__password{
+    width: 95%;
+    margin-bottom: 12px;
+    background-color: var(--footer-bg);
+    border: none;
+    padding: 9px 12px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login__submit{
+    width: 100%;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 12px;
+    background-color: var(--btn-green);
+    color: var(--white);
+}
+
+#start-here-para{
+    text-decoration: none;
+    color: var(--btn-green);
+}

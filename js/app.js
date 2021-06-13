@@ -1,8 +1,7 @@
 import { productsArray } from '../js/store.js';
 //variables
 const productEl = document.querySelector(".products__flex");
-const addToCartBtn = document.querySelector(".add__to__cart");
-const cartItemsValue = document.querySelector(".cart__items");
+
 //show products
 function showProducts(array){
     array.forEach((product) => {
@@ -35,4 +34,11 @@ showProducts(productsArray);
 addToCartBtn.addEventListener("click" , () => {
     cartItemsValue.innerText++;
     console.log(cartItemsValue.innerText);
+})
+
+
+document.addEventListener("DOMContentLoaded", function(){
+    let modals = document.querySelectorAll(".modal");
+
+    let items = document.querySelectorAll(".collapsible");
 })

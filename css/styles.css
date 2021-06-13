@@ -29,12 +29,6 @@ body{
     width: 500px;
 }
 
-.fa-shopping-cart{
-    font-size: 32px;
-    color: var(--btn-green);
-    margin-left: 10px;
-}
-
 .fa-times{
    color: var(--grey);
    font-size: 1.5rem;
