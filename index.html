@@ -21,9 +21,9 @@
                 </li>
                 </a>
                 <a href="#account-modal"><li class="list--inline"><button class="nav__btn logged-in">user</button></li></a>
-                <a href="/"><li class="list--inline"><button class="nav__btn logged-in" id="signup">Log Out</button></li></a>
+                <a href="/"><li class="list--inline"><button class="nav__btn logged-in" id="logout">Log Out</button></li></a>
                 <a href="/"><li class="list--inline"><button class="nav__btn logged-in" id="signup">create</button></li></a>
-                <a href="#signin-modal"><li class="list--inline"><button class="nav__btn logged-out" id="signup">Sign Up</button></li></a>
+                <a href="#signup-modal"><li class="list--inline"><button class="nav__btn logged-out" id="signup">Sign Up</button></li></a>
                 <a href="#login-modal"><li class="list--inline"><button class="nav__btn logged-out" id="login">Login</button></li></a>
             </ul>
     </nav>
@@ -135,29 +135,29 @@
         </div>
     </footer>
     <!--signup-->
-    <div class="login modal" id="signin-modal">
+    <div class="login modal" id="signup-modal">
         <figure><img src="/images/ghost_logo.png" alt="ghost logo grey" class="banner__grey"></figure>
-        <form action="/">
+        <form id="signup-form">
         <label for="email">
-            Email <input type="email" name="email" id="email__field" class="login__email" required>
+            Email <input type="email" name="email" class="login__email" id="signup-email" required>
         </label>
         <label for="password">
-            Password <input type="password" name="password" id="password__field" class="login__password" required>
+            Password <input type="password" name="password" class="login__password" id="signup-password" required>
         </label>
-        <input type="submit" value="Sign Up" id="login__page" class="login__submit">
+        <input type="submit" value="Sign Up" class="login__submit">
         </form>
     </div>
     <!--login-->
     <div class="login modal" id="login-modal">
         <figure><img src="/images/ghost_logo.png" alt="ghost logo grey" class="banner__grey"></figure>
-        <form action="/">
+        <form id="login-form">
         <label for="email">
-            Email <input type="email" name="email" id="email__field" class="login__email" required>
+            Email <input type="email" name="email" class="login__email" required>
         </label>
         <label for="password">
-            Password <input type="password" name="password" id="password__field" class="login__password" required>
+            Password <input type="password" name="password" class="login__password" required>
         </label>
-        <input type="submit" value="Login" id="login__page" class="login__submit">
+        <input type="submit" value="Login" class="login__submit">
         <p>New customer? <a href="/html/signup.html" id="start-here-para">Start here</a></p>
         </form>
     </div>
@@ -193,7 +193,7 @@
 
   //make auth and firestore references 
   const auth = firebase.auth();
-  const db = firbase.firestore();
+  const db = firebase.firestore();
 
   //update firebase settings
   db.settings({ timestampsInSnapshots: true})

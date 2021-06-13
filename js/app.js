@@ -31,11 +31,6 @@ function showProducts(array){
 
 showProducts(productsArray);
 
-addToCartBtn.addEventListener("click" , () => {
-    cartItemsValue.innerText++;
-    console.log(cartItemsValue.innerText);
-})
-
 
 document.addEventListener("DOMContentLoaded", function(){
     let modals = document.querySelectorAll(".modal");
