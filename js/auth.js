@@ -22,12 +22,16 @@ const setupGuides = (data) => {
     guideList.innerHTML = '<h5>Login to view guides</h5>'
   }
 }
-
+const accountDetails = document.querySelector("#account-modal");
 //listen for auth status changes 
 auth.onAuthStateChanged(user => {
     // console.log(user);
     if(user){
-        console.log("user logged in:", user);
+        console.log("user logged in as: ", user.email);
+        const html = `
+            <div>Logged in as ${user.email}</div>
+        `
+        accountDetails.innerHTML = html;
         db.collection('guides').get().then(snapshot => {
             setupGuides(snapshot.docs);
             setupUI(user);
