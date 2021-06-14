@@ -25,7 +25,12 @@ body{
 
 .cart__link{
     color: var(--white);
+    cursor: pointer;
 }
+
+/* .cart__text:hover{
+    color: var(--btn-green);
+} */
 
 .fa-shopping-cart{
     color: var(--white);
@@ -38,7 +43,7 @@ body{
     height: 20px;
     width: 20px;
     display: inline-block;
-    right: 91px;
+    right: 3px;
     text-align: center;
     border-radius: 50%;
     font-family: 'Poppins', sans-serif;
@@ -67,8 +72,18 @@ nav{
 }
 
 .nav__list li{
-    margin: 0 10px;
+    margin: 0 8px;
     color: white;
+}
+
+.fa-user{
+    border-radius: 50%; 
+    color: var(--white);
+    font-size: 18px;
+}
+
+.fa-user:hover{
+    color: var(--btn-green);
 }
 
 .nav__btn{
@@ -518,8 +533,7 @@ padding: 6px 12px;
 border-radius: 5px;
 background-color: var(--white);
 width: 500px;
-margin: 15% 30%;
-box-shadow: -5px -5px 1px var(--white);
+margin: 10vw 30vw
 }
 
 .banner__grey{
@@ -570,4 +584,8 @@ box-shadow: -5px -5px 1px var(--white);
 #start-here-para{
     text-decoration: none;
     color: var(--btn-green);
+}
+
+#account-modal{
+    text-align: center;
 }

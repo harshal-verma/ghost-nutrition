@@ -14,40 +14,29 @@
     <nav class='nav__flex'>
             <img src="/images/ghost_logo.png" alt="ghost logo" class="nav__logo">
             <ul class="nav__list">
-
-
-                <li class="list--inline cart__link logged-in">
-                    <a href="/html/cart.html"></a>
-                    <span class="cart__text">Cart</span>
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="cart__items">0<span>
-                    </a>
-                </li>
                 
                 <li class="list--inline logged-in">
-                    <a href="#account-modal">
-                    <button class="nav__btn logged-in">user</button></a>
-                </li>
-
-                <li class="list--inline logged-in">
-                    <a href="/">
-                    <button class="nav__btn logged-in" id="logout">Log Out</button></a>
-                
-                </li>
-
-                <li class="list--inline logged-in">
-                    <a href="/"></a>
-                    <button class="nav__btn logged-in" id="signup">create</button></a>
+                    <a href="#account-modal" class=" logged-in"><i class="fas fa-user"></i></a>
                 </li>
 
                 <li class="list--inline logged-out">
-                    <a href="#signup-modal">
-                    <button class="nav__btn logged-out" id="signup">Sign Up</button></a>
+                    <a href="#signup-modal" class="nav__btn logged-out" id="signup">Sign Up</a>
                 </li>
 
                 <li class="list--inline logged-out">
-                    <a href="#login-modal">
-                    <button class="nav__btn logged-out" id="login">Login</button></a></li>
+                    <a href="#login-modal" class="nav__btn logged-out" id="login">Login</a></li>
+
+                <li class="list--inline logged-in">
+                    <a href="/" class="nav__btn logged-in" id="logout">Log Out</button></a>              
+                </li>
+
+                    <li class="list--inline cart__link logged-in">
+                        <a href="/html/cart.html"></a>
+                        <span class="cart__text">Cart</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart__items">0<span>
+                        </a>
+                    </li>
             </ul>
     </nav>
     <main>
@@ -149,7 +138,7 @@
                 </button>
                 </a>
                 </div>
-                <div class="madeby__link"><strong>&lt;/&gt;</strong> by <a href="harshaverma.netlify.app"><strong class="name">Harshal</strong></a></div>
+                <div class="madeby__link"><strong>&lt;/&gt;</strong> by <a href="harshalverma.netlify.app"><strong class="name">Harshal</strong></a></div>
             </div>
             <div class="disclaimer">
             <p><strong>Disclaimer</strong> : All images & products featured belong to their respective copyright holders.
@@ -186,7 +175,7 @@
     </div>
     <!--account modal-->
     <div id="account-modal" class="modal">
-        <h4>hello user</h4>
+        <h4>Please Sign up to continue! </h4>
         <div></div>
     </div>
     <!--guides modal-->
