@@ -14,17 +14,40 @@
     <nav class='nav__flex'>
             <img src="/images/ghost_logo.png" alt="ghost logo" class="nav__logo">
             <ul class="nav__list">
-                <a href="/html/cart.html"><li class="list--inline cart__link">
+
+
+                <li class="list--inline cart__link logged-in">
+                    <a href="/html/cart.html"></a>
                     <span class="cart__text">Cart</span>
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart__items">0<span>
+                    </a>
                 </li>
-                </a>
-                <a href="#account-modal"><li class="list--inline"><button class="nav__btn logged-in">user</button></li></a>
-                <a href="/"><li class="list--inline"><button class="nav__btn logged-in" id="logout">Log Out</button></li></a>
-                <a href="/"><li class="list--inline"><button class="nav__btn logged-in" id="signup">create</button></li></a>
-                <a href="#signup-modal"><li class="list--inline"><button class="nav__btn logged-out" id="signup">Sign Up</button></li></a>
-                <a href="#login-modal"><li class="list--inline"><button class="nav__btn logged-out" id="login">Login</button></li></a>
+                
+                <li class="list--inline logged-in">
+                    <a href="#account-modal">
+                    <button class="nav__btn logged-in">user</button></a>
+                </li>
+
+                <li class="list--inline logged-in">
+                    <a href="/">
+                    <button class="nav__btn logged-in" id="logout">Log Out</button></a>
+                
+                </li>
+
+                <li class="list--inline logged-in">
+                    <a href="/"></a>
+                    <button class="nav__btn logged-in" id="signup">create</button></a>
+                </li>
+
+                <li class="list--inline logged-out">
+                    <a href="#signup-modal">
+                    <button class="nav__btn logged-out" id="signup">Sign Up</button></a>
+                </li>
+
+                <li class="list--inline logged-out">
+                    <a href="#login-modal">
+                    <button class="nav__btn logged-out" id="login">Login</button></a></li>
             </ul>
     </nav>
     <main>
@@ -152,10 +175,10 @@
         <figure><img src="/images/ghost_logo.png" alt="ghost logo grey" class="banner__grey"></figure>
         <form id="login-form">
         <label for="email">
-            Email <input type="email" name="email" class="login__email" required>
+            Email <input type="email" name="email" class="login__email" id="login-email" required>
         </label>
         <label for="password">
-            Password <input type="password" name="password" class="login__password" required>
+            Password <input type="password" name="password" class="login__password" id="login-password" required>
         </label>
         <input type="submit" value="Login" class="login__submit">
         <p>New customer? <a href="/html/signup.html" id="start-here-para">Start here</a></p>
@@ -166,6 +189,8 @@
         <h4>hello user</h4>
         <div></div>
     </div>
+    <!--guides modal-->
+    <div id="guides-modal" class="modal guides"></div>
     <!--firebase-->
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
