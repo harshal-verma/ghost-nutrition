@@ -589,3 +589,14 @@ margin: 10vw 30vw
 #account-modal{
     text-align: center;
 }
+
+.fa-times-circle{
+    display: flex;
+    justify-content:flex-end;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.fa-times-circle:hover{
+    color: red;
+}
