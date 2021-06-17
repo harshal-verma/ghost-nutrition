@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav class='nav__flex'>
-            <img src="/images/ghost_logo.png" alt="ghost logo" class="nav__logo">
+            <a href ="index.html"><img src="/images/ghost_logo.png" alt="ghost logo" class="nav__logo"></a>
             <ul class="nav__list">
                 
                 <li class="list--inline logged-in">
@@ -53,8 +53,8 @@
             <div class="products">
                 <h2 class="products__heading">Products</h2>
                 <div class="products__flex">
-<!-- 
-                    <div class="products__card">
+
+                    <!-- <div class="products__card">
                     <figure><img src="/images/ghost_logo.png" alt="product 1" class="products__image"></figure>
                     <h3 class="product__heading">Glitch Shaker</h3>
                     <p class="product__description"><span class="description__bold">Description:</span>
@@ -66,7 +66,7 @@
                         </div>
                         <div class="products__quatities">
                             <p>Quantity</p>
-                            <i class="fas fa-less-than"></i> <span id="number__of__items">1</span> <i class="fas fa-greater-than"></i>
+                            <i class="fas fa-less-than"></i> <span id="number-quantity">1</span> <i class="fas fa-greater-than"></i>
                         </div>
                     </div>
                     <button class="add__to__cart">Add to cart</button><button class="view__product" id="view">View 
@@ -118,7 +118,6 @@
                 <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your message here" required></textarea>
             </label>
             <input type="submit" value="SEND">
-            <!-- <button class='submit'>SEND</button> -->
             </form>
             </div>
         </div>
@@ -148,7 +147,7 @@
     </footer>
     <!--signup-->
     <div class="login modal" id="signup-modal">
-        <i class="fas fa-times-circle" onclick="cancelModal()"></i>
+        <i class="fas fa-times-circle cancel"></i>
         <figure><img src="/images/ghost_logo.png" alt="ghost logo grey" class="banner__grey"></figure>
         <form id="signup-form">
         <label for="email">
@@ -162,7 +161,7 @@
     </div>
     <!--login-->
     <div class="login modal" id="login-modal">
-        <i class="fas fa-times-circle"></i>
+        <i class="fas fa-times-circle cancel"></i>
         <figure><img src="/images/ghost_logo.png" alt="ghost logo grey" class="banner__grey"></figure>
         <form id="login-form">
         <label for="email">
@@ -172,31 +171,23 @@
             Password <input type="password" name="password" class="login__password" id="login-password" required>
         </label>
         <input type="submit" value="Login" class="login__submit">
-        <p>New customer? <a href="/html/signup.html" id="start-here-para">Start here</a></p>
         </form>
     </div>
     <!--account modal-->
     <div id="account-modal" class="modal">
-        <i class="fas fa-times-circle"></i>
+        <i class="fas fa-times-circle cancel"></i>
         <h4>Please Sign up to continue! </h4>
         <div></div>
     </div>
     <!--guides modal-->
     <div id="guides-modal" class="modal guides"></div>
     <!--firebase-->
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
 
 <script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
     apiKey: "AIzaSyCrU7ui97NB_s_ftuRx2FHwHkYyAXLTWiY",
     authDomain: "ghost-nutrition.firebaseapp.com",
@@ -204,22 +195,17 @@
     appId: "1:959961484512:web:476bcc42d1f43c7a321485",
     measurementId: "G-LJF879EC3N"
   };
-  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-
-  //make auth and firestore references 
   const auth = firebase.auth();
   const db = firebase.firestore();
-
-  //update firebase settings
   db.settings({ timestampsInSnapshots: true})
 </script>    
 
-    <script type="module" src="./js/app.js"></script>
-    <script type="module" src="./js/store.js"></script>
-    <script type="module" src="./js/auth.js"></script>
-    <script type="module" src="./js/index.js"></script>
+<script type="module" src="./js/app.js"></script>
+<script type="module" src="./js/store.js"></script>
+<script type="module" src="./js/auth.js"></script>
+<script type="module" src="./js/index.js"></script>
 
 </body>
 </html>

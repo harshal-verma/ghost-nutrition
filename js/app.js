@@ -1,6 +1,7 @@
 import { productsArray } from '../js/store.js';
 //variables
 const productEl = document.querySelector(".products__flex");
+const cancel = document.querySelector("i");
 
 //show products
 function showProducts(array){
@@ -18,7 +19,7 @@ function showProducts(array){
            </div>
            <div class="products__quatities">
                <p>Quantity</p>
-               <i class="fas fa-less-than"></i> <span class="quantity" id="number__of__items">1</span> <i class="fas fa-greater-than"></i>
+               <i class="fas fa-less-than"></i> <span class="quantity number-quantity">1</span> <i class="fas fa-greater-than"></i>
            </div>
        </div>
        <button class="add__to__cart">Add to cart</button><button class="view__product" id="view">View 
@@ -30,10 +31,20 @@ function showProducts(array){
 }
 
 showProducts(productsArray);
+const subBtn = document.querySelector('.fa-less-than');
+const moreBtn = document.querySelector('.fa-greater-than');
+const quantity = document.querySelector('.number-quantity');
 
+subBtn.addEventListener("click", () => {
+    quantity.innerText--;
+    if( quantity.innerText <= 1){
+        quantity.innerText = 1;
+    }
+})
 
-document.addEventListener("DOMContentLoaded", function(){
-    let modals = document.querySelectorAll(".modal");
-
-    let items = document.querySelectorAll(".collapsible");
+moreBtn.addEventListener("click" , () => {
+    quantity.innerText++;
+    if( quantity.innerText > 5){
+        quantity.innerText = 5;
+    }  
 })
