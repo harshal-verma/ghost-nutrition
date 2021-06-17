@@ -12,18 +12,20 @@ function showProducts(array){
        <figure><img src=${product.image} alt=${product.name} class="products__image"></figure>
        <h3 class="product__heading">${product.name}</h3>
        <p class="product__description"><span class="description__bold">Description: </span>${product.description}</p>
+
        <div class="products__pq">
            <div class="products__price">
                <p>Price</p>
-               <h2>${product.price}$</h2>
+               <h2>$ <span class="price">${product.price}</span></h2>
            </div>
            <div class="products__quatities">
-               <p>Quantity</p>
-               <i class="fas fa-less-than"></i> <span class="quantity number-quantity">1</span> <i class="fas fa-greater-than"></i>
-           </div>
+           <p>Quantity</p>
+           <i class="fas fa-less-than"></i> <span class="number-quantity">1</span> <i class="fas fa-greater-than"></i>
        </div>
-       <button class="add__to__cart">Add to cart</button><button class="view__product" id="view">View 
-       </button>
+       </div>
+       
+       <a href="#signup-modal" class="add__to__cart">Add to cart</a><a class="view__product" id="view">View 
+       </a>
    </div>
        `;
        productEl.append(productCardEl);
@@ -31,20 +33,30 @@ function showProducts(array){
 }
 
 showProducts(productsArray);
-const subBtn = document.querySelector('.fa-less-than');
-const moreBtn = document.querySelector('.fa-greater-than');
-const quantity = document.querySelector('.number-quantity');
 
-subBtn.addEventListener("click", () => {
-    quantity.innerText--;
-    if( quantity.innerText <= 1){
-        quantity.innerText = 1;
-    }
-})
+// const subBtn = document.querySelectorAll('.fa-less-than');
+// const moreBtn = document.querySelectorAll('.fa-greater-than');
+// const quantity = document.querySelectorAll('.number-quantity');
+// const price = document.querySelectorAll(".price");
+// const itemPrice = parseInt(price.innerText);
+// subBtn.addEventListener("click", () => {
+//     quantity.innerText--;
+//     if( quantity.innerText <= 1){
+//         quantity.innerText = 1;
+//         price.innerText = 7;
+//     }
+//     const itemPricesubBtn = parseInt(price.innerText);
+//     price.innerText = itemPricesubBtn - itemPrice;
+//     if( price.innerText  == 0){
+//         price.innerText = 7;
+//     }
+// })
 
-moreBtn.addEventListener("click" , () => {
-    quantity.innerText++;
-    if( quantity.innerText > 5){
-        quantity.innerText = 5;
-    }  
-})
+// moreBtn.addEventListener("click" , () => {
+//     quantity.innerText++;
+//     if( quantity.innerText > 5){
+//         quantity.innerText = 5;
+//     }
+//     let itemQuantity = parseInt(quantity.innerText);
+//     price.innerText = itemPrice*itemQuantity;
+// })
