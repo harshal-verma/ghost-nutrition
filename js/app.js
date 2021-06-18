@@ -1,7 +1,6 @@
 import { productsArray } from '../js/store.js';
 //variables
 const productEl = document.querySelector(".products__flex");
-const cancel = document.querySelector("i");
 
 //show products
 function showProducts(array){
@@ -24,8 +23,7 @@ function showProducts(array){
        </div>
        </div>
        
-       <a href="#signup-modal" class="add__to__cart">Add to cart</a><a class="view__product" id="view">View 
-       </a>
+       <a href="#signup-modal" class="add__to__cart">Add to cart</a>
    </div>
        `;
        productEl.append(productCardEl);
@@ -33,7 +31,6 @@ function showProducts(array){
 }
 
 showProducts(productsArray);
-
 // const subBtn = document.querySelectorAll('.fa-less-than');
 // const moreBtn = document.querySelectorAll('.fa-greater-than');
 // const quantity = document.querySelectorAll('.number-quantity');

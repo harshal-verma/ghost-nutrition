@@ -33,7 +33,7 @@ export const productsArray = [
         id: 4,
         image: 'https://cdn.shopify.com/s/files/1/2060/6331/products/6.png?v=1587745354',
         name: 'Ghost Legend',
-        description: "We aren’t the type to make crazy claims or talk nuanced product specifications (there’s this thing called the internet for those that want to research). All you need to know is that GHOST LEGEND® lorem ipsum doroto lordata",
+        description: "We aren’t the type to make crazy claims or talk nuanced product specifications (there’s this thing called the internet for those that want to research). All you need to know is that GHOST LEGEND®",
         details: "Citrulline is one of the best pump ingredients on the market. Most brands elect to stick Citrulline in a proprietary blend, under dose the compound or use ‘Citrulline Malate,’ which today is no more than a blend of L-Citrulline and Malic Acid, often in an undisclosed ratio. in GHOST Legend® is equivalent to the L-Citrulline content of 8 grams of Citrulline Malate! Pure L-Citrulline may be more expensive, but anecdotally provides better pumps without the potential for stomach discomfort caused by the additional acid.",
         price: 30,
         type: 'Muscle Builder',

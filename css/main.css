@@ -23,15 +23,6 @@ body{
     display: inline;
 }
 
-.cart__link{
-    color: var(--white);
-    cursor: pointer;
-}
-
-/* .cart__text:hover{
-    color: var(--btn-green);
-} */
-
 .fa-shopping-cart{
     color: var(--white);
 }
@@ -48,6 +39,11 @@ body{
     border-radius: 50%;
     font-family: 'Poppins', sans-serif;
     padding: 2px;
+}
+
+.cart-link{
+    color: white;
+    cursor: pointer;
 }
 
 .cart__text{
@@ -232,7 +228,7 @@ nav{
 }
 
 .add__to__cart{
-    width: 70%;
+    width: 90%;
     display: inline-block;
     font-size: 18px;
     background-color: var(--btn-green);
@@ -534,8 +530,7 @@ border: 1px solid var(--grey);
 padding: 6px 12px;
 border-radius: 5px;
 background-color: var(--white);
-width: 500px;
-margin: 10vw 30vw
+text-align: center;
 }
 
 .banner__grey{
@@ -546,9 +541,11 @@ margin: 10vw 30vw
 }
 
 .modal:target{
+    margin: auto;
     display: block;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 20%;
+    left: 40%;
 }
 
 .login__email{
@@ -583,16 +580,12 @@ margin: 10vw 30vw
     color: var(--white);
 }
 
-#start-here-para{
-    text-decoration: none;
-    color: var(--btn-green);
-}
-
 #account-modal{
     text-align: center;
 }
 
 .fa-times-circle{
+    width: 10px;
     display: flex;
     justify-content:flex-end;
     cursor: pointer;
