@@ -131,7 +131,7 @@ nav{
 .products__flex{
     display: grid;
     padding: 6px 12px;
-    /* flex-wrap: wrap; */
+    overflow: hidden;
     grid-template-columns: repeat(3, 1fr );
 }
 
